@@ -8,6 +8,11 @@ export const addCartItems = cartItems => ({
   payLoad: cartItems
 });
 
+export const removeQuantity = cartItem => ({
+  type: CartActionTypes.DECREASE_ITEM_QTY,
+  payLoad: cartItem
+});
+
 export const removeItemFromCart = cartItems => ({
   type: CartActionTypes.REMOVE_ITEM_FROM_CART,
   payLoad: cartItems
